@@ -1,0 +1,40 @@
+cd C:\Users\bhargav\Downloads\comp 6461\CNP_A2\router\windows
+
+router_x64.exe --port=3000 --drop-rate=0.3 --max-delay=15ms --seed 2387230234324
+
+router_x64.exe --port=3000 --drop-rate=0 --max-delay=100ms --seed 2387230234324
+
+router_x64.exe --port=3000 --drop-rate=0.2 --max-delay=0 --seed 2387230234324
+
+
+
+cd C:\Users\bhargav\Downloads\comp 6461\CNP_A2
+
+httpfs.py -arq -v -p 8080 -d .
+
+
+httpc.py -arq get -v -p 8080 -o "output" "http://localhost/bar"
+
+httpc.py -arq get -v -p 8080 -o "output" "http://localhost/foo"
+
+httpc.py -arq get -v -p 8080 -o "output" "http://localhost/.."
+
+httpc.py -arq post -v -p 8080 -head Content-Type:application/json -d "{\"Demo\":\"444444444\"}" "http://localhost/bar"
+
+
+httpc.py -arq post -v -p 8080 -head Content-Type:application/json -f bar "http://localhost/ba3"
+
+
+{"bhargav":"xyz"}
+{"sncjcdskcdscnds":"nascjasc"}
+{"Bhargav":"File"}
+{"1":"a"}
+{"Kunal":"fffff"}Assssessment:2
+{"Assignment":"2"}
+{"Assignment":"2"}
+{"Assignment":"2"}
+{"Assignment":"2"}
+{"Assignment":"2"}
+{"Assignment":"kkk"}
+{"Assignment":"2"}
+{"Demo":"bhargav"}
